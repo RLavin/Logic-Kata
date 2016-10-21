@@ -34,25 +34,28 @@ public class Logickata {
     }
 
     public static String blackJack(List<Integer> dealer, List<Integer> player){
-       int x = 0;
+        String result = null;
+        int x = 0;
         int y = 0;
 
         for (int i = 0; i < dealer.size(); i++) {
             x = x + dealer.get(i);
         }
+
         for ( int a = 0; a < player.size(); a++){
             y = y + player.get(a);
         }
-          if (x>y){
-              System.out.print("Dealer");
+
+          if (x>y && x<=21||y>=21){
+             result = "Dealer";
           }
-           if(y>x){
-            System.out.print("Player");
+           else{
+            result ="Player";
         }
         if (x==21||y==21){
-            System.out.print("BlackJack");
+            result =result +"BlackJack";
         }
 
-
+       return result;
     }
 }

@@ -21,6 +21,9 @@ public class Main {
         testlove6Example2();
         testlove6Example3();
         testblackJackExample();
+        testblackJackExample2();
+        testblackJackExample3();
+        testblackJackExample4();
 
         }
 
@@ -109,23 +112,66 @@ public class Main {
         x.add(1);
         x.add(7);
         x.add(3);
-        List<Integer> j = new ArrayList<Integer>(x);
         List<Integer> y = new ArrayList<Integer>();
         y.add(4);
         y.add(10);
         y.add(10);
-        List<Integer> a = new ArrayList<Integer>(y);
-
-       String z = Logickata.blackJack(x,y);
+        String z = Logickata.blackJack(x,y);
 
         System.out.printf("blackJack(%s, %s) -> %s\n", x, y, z);
 
 
+    }
 
+    private static void testblackJackExample2(){
+        List<Integer> x = new ArrayList<Integer>();
+        x.add(1);
+        x.add(7);
+        x.add(3);
+        x.add(5);
+        List<Integer> y = new ArrayList<Integer>();
+        y.add(4);
+        y.add(10);
+
+        String z = Logickata.blackJack(x,y);
+
+        System.out.printf("blackJack(%s, %s) -> %s\n", x, y, z);
+
+    }
+
+    private static void testblackJackExample3(){
+        List<Integer> x = new ArrayList<Integer>();
+        x.add(1);
+        x.add(7);
+        x.add(6);
+        List<Integer> y = new ArrayList<Integer>();
+        y.add(4);
+        y.add(10);
+        y.add(3);
+
+        String z = Logickata.blackJack(x,y);
+
+        System.out.printf("blackJack(%s, %s) -> %s\n", x, y, z);
+
+    }
+
+    private static void testblackJackExample4(){
+        List<Integer> x = new ArrayList<Integer>();
+        x.add(11);
+        x.add(10);
+        List<Integer> y = new ArrayList<Integer>();
+        y.add(4);
+        y.add(10);
+        y.add(3);
+
+        String z = Logickata.blackJack(x,y);
+
+        System.out.printf("blackJack(%s, %s) -> %s\n", x, y, z);
 
     }
 
 
-    }
+
+}
 
 
