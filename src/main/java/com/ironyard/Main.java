@@ -157,12 +157,11 @@ public class Main {
 
     private static void testblackJackExample4(){
         List<Integer> x = new ArrayList<Integer>();
-        x.add(11);
+        x.add(30);
         x.add(10);
         List<Integer> y = new ArrayList<Integer>();
-        y.add(4);
+        y.add(11);
         y.add(10);
-        y.add(3);
 
         String z = Logickata.blackJack(x,y);
 
